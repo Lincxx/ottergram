@@ -2,8 +2,13 @@ body {
   font-size: 10px;
 }
 
-a{
+a[href]{
   text-decoration: none;
+}
+
+.thumbnail-image {
+    display: block;
+    width: 100%;
 }
 
 .thumbnail-title {
