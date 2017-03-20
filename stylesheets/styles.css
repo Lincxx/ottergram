@@ -1,6 +1,16 @@
+@font-face {
+    font-family: 'lakeshore';
+    src: url('../fonts/LAKESHOR-webfont.eot');
+    src: url('../fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/LAKESHOR-webfont.woff') format('woff'),
+    url('../fonts/LAKESHOR-webfont.ttf') format('truetype'),
+    url('../fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
   font-size: 10px;
-  background: rgb(149, 194, 215);
+  background: rgb(159, 209, 232);
 }
 
 a[href]{
@@ -11,6 +21,7 @@ a[href]{
     background: white;
     text-align: center;
     text-transform: uppercase;
+    font-family: lakeshore;
     font-size: 37px;
 }
 
@@ -44,4 +55,6 @@ a[href]{
   font-size: 18px;
 }
 
-/*Left off at page 47*/
+.detail-image {
+    width: 90%;
+}
