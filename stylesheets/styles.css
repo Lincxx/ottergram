@@ -8,13 +8,24 @@
     font-weight: normal;
     font-style: normal;
 }
+
+html, body {
+    height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-size: 10px;
   background: rgb(159, 209, 232);
 }
 
 a[href]{
   text-decoration: none;
+}
+
+.main-header {
+    flex: 0 1 auto;
 }
 
 .logo-text {
@@ -25,20 +36,32 @@ a[href]{
     font-size: 37px;
 }
 
+.main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .thumbnail-item + .thumbnail-item {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 
 .thumbnail-item {
     /*display: block;*/
     display: inline-block;
-    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
     /*declaring it, because some browsers don't support the rgba*/
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
 
 .thumbnail-list {
+    flex: 0 1 auto;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     padding:0;
 
@@ -58,6 +81,10 @@ a[href]{
   background: rgb(96, 125, 139);
   color: rgb(202, 238, 255);
   font-size: 18px;
+}
+
+.detail-image-container {
+    flex: 1 1 auto;
 }
 
 .detail-image {
