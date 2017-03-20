@@ -30,7 +30,9 @@ a[href]{
 }
 
 .thumbnail-item {
-    display: block;
+    /*display: block;*/
+    display: inline-block;
+    width: 120px;
     /*declaring it, because some browsers don't support the rgba*/
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
@@ -39,6 +41,9 @@ a[href]{
 .thumbnail-list {
     list-style: none;
     padding:0;
+
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .thumbnail-image {
